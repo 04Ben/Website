@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
+    <title>Server</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Wie Sie einen Server aufsetzen...</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="#">Server</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article class="container">
+                <h2>Server erstellen</h2>
+                <div class="row">
+                    <section class="s1">
+                        <h3>Vorraussetzungen</h3>
+                        <ul>
+                            <li>Besitzen Sie das Spiel <a
+                                    href="https://www.minecraft.net/de-de/login?return_url=/de-de/profile">Minecraft</a>
+                            </li>
+                            <li>PC mit genügend Leistung</li>
+                            <li>Java installiert (<a href="https://www.java.com/de/">Java</a>)</li>
+                            <li>OpenJDK (<a href="https://adoptopenjdk.net/">OpenJDK</a>)</li>
+                            <li>Dateienerweiterung aktiv</li>
+                        </ul>
+                    </section>
+                    <aside class="aside1">
+                        <img src="../images/server/survivalbild-min.png" alt="Survival Bild" class="img">
+                    </aside>
+                </div>
+                <div class="row">
+                    <section class="s1">
+                        <h3>Installation</h3>
+                        <ol>
+                            <li><a href="https://www.minecraft.net/de-de/download/server">Server </a>auf der offizielen
+                                Minecraft Seite herunterladen</li>
+                            <li>Ordner anlegen wo Sie Ihren Server installieren wollen</li>
+                            <li>Erstellen einer <strong>start.bat</strong> Datei mit dem Text: <strong>java -Xmx(Ihr
+                                    maximal
+                                    Wert)M
+                                    -Xms(Ihr minimal Wert)M -jar minecraft_server.1.18.jar nogui
+                                </strong></li>
+                            <li>starten der <strong>start.bat</strong> Datei</li>
+                            <li>eula von false auf trrue setzhen</li>
+                            <li><strong>start.bat</strong> erneut ausführen</li>
+                            <li>Geben Sie in die Konsole <strong>stop</strong> ein um den Server wieder zu stoppen</li>
+                            <li>Server sollte nun so aussehen wie Rechts im Bild</li>
+                        </ol>
+                    </section>
+                    <aside class="aside1">
+                        <img src="../images/server/dateifenster-fertig-min.png"
+                            alt="logs, world, banned-ips.json, banned-players.json, eula.txt, server.jar, server.properties, start.bat, usercache.json, whitelist.json"
+                            class="img">
+                    </aside>
+                </div>
+                <div class="row">
+                    <section class="s1">
+                        <h3>Konfigurieren</h3>
+                        <ol>
+                            <li>Öffnen Sie die <strong>server.probeties</strong></li>
+                            <li>Ändern Sie den gewünschten Inhalt</li>
+                            <li>Speichern Sie das ganze ab</li>
+                        </ol>
+                    </section>
+                    <aside class="aside1">
+                        <img src="../images/server/probeties-min.png" alt="Server-Probeties" class="img">
+                    </aside>
+                </div>
+                <div class="row">
+                    <section class="s1">
+                        <h3>Starten und Loslegen</h3>
+                        <ol>
+                            <li>Starten Sie <strong>start.bat</strong> erneut</li>
+                            <li>Öffnen Sie Ihr Minecraft</li>
+                            <li>Gehen Sie auf Multiplayer</li>
+                            <li>Fügen Sie einen neuen Server hinzu</li>
+                            <li>Geben Sie dem Server einen Namen</li>
+                            <li>Geben Sie als IP-Adresse <strong>localhst</strong> ein</li>
+                            <li>Joinen Sie dem Server</li>
+                            <li>Herzlichen Glückwunsche Sie sind fertig!</li>
+                        </ol>
+                    </section>
+                    <aside class="aside1">
+                        <img src="../images/server/localhost-min.png"
+                            alt="Serverinformationen bearbeiten, Servername Ihr-Minecraft-Server, Serveradresse localhost, Server-Ressourcenpakete: Abfrage, Fertig, Abbrechen"
+                            class="img">
+                    </aside>
+                </div>
+            </article>
+        </main>
+        <footer id="end">
+            <p> Impressum: &middot; xxxxxx xxxxxx &middot; xxxxxx xxxxxx &middot; xxxxxx xxxxxx &middot; Telefon xxxxxx
+                &middot; e-mail: xxxxxx </p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
+    <title>Galerie</title>
+</head>
+
+<body>
+    <div id="wrapper1">
+        <header>
+            <h1>Galerie</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="server.html">Server</a></li>
+                <li><a href="#">Galerie</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="content">
+                <img class="dishow" src="../images/galerie/brennendetreppe-min.png" alt="Brennende Treppe">
+                <img class="dishow" src="../images/galerie/burgeingang-min.png" alt="Burgeingang">
+                <img class="dishow" src="../images/galerie/burg-min.png" alt="Burg">
+                <img class="dishow" src="../images/galerie/schloss-min.png" alt="Schloss">
+                <img class="dishow" src="../images/galerie/schiff-min.png" alt="Schiff">
+                <img class="dishow" src="../images/galerie/eingesperrt-min.png" alt="Eingesperrter Typ">
+                <img class="dishow" src="../images/galerie/burgblick-min.png" alt="Burgblick">
+                <img class="dishow" src="../images/galerie/cringe-min.png" alt="Cringe">
+                <img class="dishow" src="../images/galerie/typ-min.png" alt="Typ bei Nacht">
+                <img class="dishow" src="../images/galerie/nachtburg-min.png" alt="Burg bei Nacht">
+                <img class="dishow" src="../images/galerie/ausstellungeingang-min.png" alt="Ausstellungseingang">
+                <img class="dishow" src="../images/galerie/ausstellung-min.png" alt="Ausstellung">
+            </div>
+        </main>
+        <footer id="end">
+            <p> Impressum: &middot; xxxxxx xxxxxx &middot; xxxxxx xxxxxx &middot; xxxxxx xxxxxx &middot; Telefon xxxxxx &middot; e-mail: xxxxxx </p>
+        </footer>
+    </div>
+
+    <!--Script Hilfe aus w3scchools-->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("dishow");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+
+</html>

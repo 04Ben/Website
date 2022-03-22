@@ -1,0 +1,197 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*****Allgemein*****/
+
+header {
+    background-color: rgb(7, 167, 42);
+    padding: 2.5%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+    body {
+        background-image: none;
+        background-color: black;
+    }
+    #wrapper {
+        width: 100%;
+    }
+    .img {
+        width: 40%;
+    }
+    .s1 {
+        margin-left: 2%;
+    }
+
+/*Style für angepasste (ab 900px) Geräte*/
+
+@media(min-width: 900px) {
+    body {
+        background-image: url(../images/background-min.png);
+        background-size: cover;
+        box-sizing: border-box;
+        background-attachment: fixed;
+    }
+    #wrapper {
+        width: 75%;
+        margin: 10px auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.219);
+    }
+    #wrapper1 {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#778d17+31,273000+46,273000+54,273000+54,778d17+63,47511d+100 */
+        background: #778d17;
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #778d17 31%, #273000 46%, #273000 54%, #273000 54%, #778d17 63%, #47511d 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #778d17 31%, #273000 46%, #273000 54%, #273000 54%, #778d17 63%, #47511d 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #778d17 31%, #273000 46%, #273000 54%, #273000 54%, #778d17 63%, #47511d 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#778d17', endColorstr='#47511d', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        text-align: center;
+    }
+    .aside1 {
+        width: 30%;
+    }
+    .s1 {
+        width: 65%;
+        margin-left: 5%;
+    }
+    .img {
+        width: 80%;
+    }
+}
+
+
+/*Style für die Navigation*/
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 2em 0;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0.6em;
+    background-color: #5c0303;
+    margin: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    box-shadow: 0 1px 1.5px 0 rgba(146, 146, 146, 0.4);
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+    color: hotpink;
+}
+
+nav ul li a:focus,
+nav ul li a:active {
+    color: rgb(7, 167, 42);
+    opacity: 0.7;
+}
+
+
+/*****Style für h1-h6*****/
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin: 0%;
+}
+
+
+/*****Style für a*****/
+
+a {
+    text-decoration: none;
+    color: rgb(9, 76, 221);
+}
+
+a:hover {
+    opacity: 0.8;
+    color: rgb(9, 155, 40);
+}
+
+a:focus {
+    color: red;
+    opacity: 0.8;
+}
+
+a:active {
+    color: rgba(146, 146, 146, 0.4);
+    opacity: 0.8;
+}
+
+
+/*****IDs*****/
+
+#end {
+    color: white;
+    background-color: black;
+    text-align: center;
+    align-items: flex-end;
+    padding: 1%;
+}
+
+
+/*****Klassen*****/
+
+.container {
+    color: rgb(255, 255, 255);
+}
+
+.s1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 12px;
+    text-align: left;
+}
+
+.aside1 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dishow {
+    display: none;
+    width: 80%;
+}
+
+.content {
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 90%;
+}
